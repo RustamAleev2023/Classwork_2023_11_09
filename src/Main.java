@@ -5,15 +5,17 @@ import task4.Builder;
 import task4.Human;
 import task4.Pilot;
 import task4.Sailor;
+import task5.InternationalPassport;
+import task5.Passport;
 
 public class Main {
     public static void main(String[] args) {
 
 //       task1();
 //       task2();
-//        task3();
-        task4();
-
+//       task3();
+//       task4();
+         task5();
 
     }
 
@@ -70,9 +72,27 @@ public class Main {
         Human human1 = new Builder("Tom1", "Ford1", 21);
         Human human2 = new Sailor("Tom2", "Ford2", 22);
         Human human3 = new Pilot("Tom3", "Ford3", 23);
-        System.out.println("Builder: " + human1);
-        System.out.println("Sailor: " + human2);
-        System.out.println("Pilot: " + human3);
+        System.out.println(human1);
+        System.out.println(human2);
+        System.out.println(human3);
+    }
+
+    public static void task5() {
+        Passport passport1 = new InternationalPassport("27 12 234564",
+                "Name1",
+                "Surname1",
+                "01.01.2000",
+                "73 000000",
+                new String[]{"DE1234567", "DE7654321", "PL1234567"});
+        Passport passport2 = new InternationalPassport("27 12 234564",
+                "Name2",
+                "Surname2",
+                "01.01.2010",
+                "73 111111",
+                new String[]{"DE1234567", "DE7654321", "PL1234567"});
+
+        System.out.println(passport1);
+        System.out.println(passport2);
     }
 }
 
