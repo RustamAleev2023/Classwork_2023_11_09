@@ -7,6 +7,7 @@ import task4.Pilot;
 import task4.Sailor;
 import task5.InternationalPassport;
 import task5.Passport;
+import task6.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +16,8 @@ public class Main {
 //       task2();
 //       task3();
 //       task4();
-         task5();
-
+//       task5();
+        task6();
     }
 
     public static void task1() {
@@ -93,6 +94,18 @@ public class Main {
 
         System.out.println(passport1);
         System.out.println(passport2);
+    }
+
+    public static void task6(){
+        Worker worker1 = new President();
+        Worker worker2 = new Security();
+        Worker worker3 = new Manager();
+        Worker worker4 = new Engineer();
+
+        worker1.print();
+        worker2.print();
+        worker3.print();
+        worker4.print();
     }
 }
 
