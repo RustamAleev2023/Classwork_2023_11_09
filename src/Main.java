@@ -1,9 +1,20 @@
 import task1.Person;
 import task2.Square;
+import task3.ComparisonFourArguments;
 
 public class Main {
     public static void main(String[] args) {
 
+//       task1();
+//       task2();
+        task3();
+
+
+
+
+
+    }
+    public static void task1(){
         //Task1
 
         Person person1 = new Person("name1", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
@@ -21,8 +32,8 @@ public class Main {
         Person person5 = new Person("name5", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
         System.out.println(person5);
         System.out.println("Counter = " + Person.counter());
-
-
+    }
+    public static void task2(){
         //Task2
         //Площадь треугольника если известна сторона и высота
         System.out.println("Площадь треугольника если известна сторона и высота: " + Square.triangleSquareBySideAndHeight(5, 3));
@@ -42,8 +53,13 @@ public class Main {
         //Площадь ромба
         System.out.println("Площадь ромба: " + Square.rhombusSquareByTwoDiagonals(5,7));
 
+    }
 
-
+    public static void task3(){
+        System.out.println("Max = " + ComparisonFourArguments.max(new int[]{1, 2, 3, 4}));
+        System.out.println("Min = " + ComparisonFourArguments.min(new int[]{1, 2, 3, 4}));
+        System.out.println("Average = " + ComparisonFourArguments.average(new int[]{1, 2, 3, 4}));
+        System.out.println("Factorial = " + ComparisonFourArguments.factorial(4));
     }
 }
 
