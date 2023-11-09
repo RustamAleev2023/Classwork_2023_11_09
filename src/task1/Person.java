@@ -1,4 +1,4 @@
-package entity;
+package task1;
 
 public class Person {
     String fullName;
