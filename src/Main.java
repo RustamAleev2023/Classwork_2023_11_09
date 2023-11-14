@@ -8,6 +8,7 @@ import task4.Sailor;
 import task5.InternationalPassport;
 import task5.Passport;
 import task6.*;
+import task7.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,25 +18,51 @@ public class Main {
 //       task3();
 //       task4();
 //       task5();
-        task6();
+//        task6();
+        task7();
     }
 
     public static void task1() {
         //Task1
 
-        Person person1 = new Person("name1", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
+        Person person1 = new Person("name1",
+                "01.01.2000",
+                "123-12-12",
+                "Kaliningrad",
+                "Russia",
+                "Mira 5-5");
         System.out.println(person1);
         System.out.println("Counter = " + Person.counter());
-        Person person2 = new Person("name2", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
+        Person person2 = new Person("name2",
+                "01.01.2000",
+                "123-12-12",
+                "Kaliningrad",
+                "Russia",
+                "Mira 5-5");
         System.out.println(person2);
         System.out.println("Counter = " + Person.counter());
-        Person person3 = new Person("name3", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
+        Person person3 = new Person("name3",
+                "01.01.2000",
+                "123-12-12",
+                "Kaliningrad",
+                "Russia",
+                "Mira 5-5");
         System.out.println(person3);
         System.out.println("Counter = " + Person.counter());
-        Person person4 = new Person("name4", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
+        Person person4 = new Person("name4",
+                "01.01.2000",
+                "123-12-12",
+                "Kaliningrad",
+                "Russia",
+                "Mira 5-5");
         System.out.println(person4);
         System.out.println("Counter = " + Person.counter());
-        Person person5 = new Person("name5", "01.01.2000", "123-12-12", "Kaliningrad", "Russia", "Mira 5-5");
+        Person person5 = new Person("name5",
+                "01.01.2000",
+                "123-12-12",
+                "Kaliningrad",
+                "Russia",
+                "Mira 5-5");
         System.out.println(person5);
         System.out.println("Counter = " + Person.counter());
     }
@@ -62,6 +89,7 @@ public class Main {
 
     }
 
+    //Task3
     public static void task3() {
         System.out.println("Max = " + ComparisonFourArguments.max(new int[]{1, 2, 3, 4}));
         System.out.println("Min = " + ComparisonFourArguments.min(new int[]{1, 2, 3, 4}));
@@ -69,6 +97,7 @@ public class Main {
         System.out.println("Factorial = " + ComparisonFourArguments.factorial(4));
     }
 
+    //Task4
     public static void task4() {
         Human human1 = new Builder("Tom1", "Ford1", 21);
         Human human2 = new Sailor("Tom2", "Ford2", 22);
@@ -78,6 +107,7 @@ public class Main {
         System.out.println(human3);
     }
 
+    //Task5
     public static void task5() {
         Passport passport1 = new InternationalPassport("27 12 234564",
                 "Name1",
@@ -96,6 +126,7 @@ public class Main {
         System.out.println(passport2);
     }
 
+    //Task6
     public static void task6(){
         Worker worker1 = new President();
         Worker worker2 = new Security();
@@ -106,6 +137,17 @@ public class Main {
         worker2.print();
         worker3.print();
         worker4.print();
+    }
+
+    //Task7
+    public static void task7(){
+       Figure[] figures = {new Rectangle(4,5),
+               new RightTriangle(8,9),
+               new Circle(10),
+               new Trapezoid(8, 10, 2)};
+        for (Figure figure : figures) {
+            figure.square();
+        }
     }
 }
 
