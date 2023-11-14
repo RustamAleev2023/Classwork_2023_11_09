@@ -9,6 +9,7 @@ import task5.InternationalPassport;
 import task5.Passport;
 import task6.*;
 import task7.*;
+import task8.Array;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +20,8 @@ public class Main {
 //       task4();
 //       task5();
 //        task6();
-        task7();
+//        task7();
+        task8();
     }
 
     public static void task1() {
@@ -149,6 +151,15 @@ public class Main {
             figure.square();
         }
     }
+
+    //Task8
+    public static void task8(){
+        Array array = new Array(new int[]{1,2,3,4,5});
+        array.print();
+        System.out.println("================================================");
+        array.print("info");
+    }
+
 }
 
 
